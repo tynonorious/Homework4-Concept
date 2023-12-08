@@ -14,7 +14,34 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--Zwart);
+}
+
+:root{
+    --Paars: #5722CD;
+    --Blauw: #4845E4;
+    --Roze: #ED4385;
+    --Zwart: #0C0C0C;
+        /*(voor standaard tekst);*/
+    --Lichtpaars: #F2F0FF;
+        /*(voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+    --Lichtgrijs: #F3F6F9;
+        /*(voor de achtergrond van de projecten)*/
+    --Grijs: #7A7A7A;
+        /*(voor de service-tegel tekst);*/
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@300&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
