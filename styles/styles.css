@@ -17,8 +17,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: var(--Zwart);
 }
 
 :root{
@@ -33,6 +33,7 @@
         /*(voor de achtergrond van de projecten)*/
     --Grijs: #7A7A7A;
         /*(voor de service-tegel tekst);*/
+    --Magnolia: #F2F0FF
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -45,6 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
 /* --------------- 3.1 Reusables ----------------------- */
 
 /* --------------- 3.2 Other --------------------------- */
@@ -53,6 +61,197 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --------------- 4.1 Header ------------------------- */
 
+header {
+    flex-basis: 100vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    background-color: var(--Paars);
+}
+
+header h1, p, button {
+    color: #FFFFFF;
+}
+
+header button {
+    background-color: var(--Roze);a
+}
+
+nav {
+    flex-basis: 10vh;
+    width: 30%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+ul {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li a {
+    color: #FFFFFF;
+    /*border: #ED4385 solid thick;*/
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
+
+.Hello {
+    flex-basis: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*TODO add correct spacing for finishing touches*/
+
+.Hello h3 {
+    color: var(--Paars);
+}
+
+/* --------------- 4.3 Work ------------------- */
+
+.Work {
+    flex-basis: 300vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--Lichtgrijs);
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.firstArticle p,
+.secondArticle p,
+.thirdArticle p {
+    color: black;
+}
+
+.firstArticle,
+.secondArticle,
+.thirdArticle {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 90vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+}
+
+.description,
+.description3 {
+    flex-basis: 35%;
+    margin-right: 5%;
+}
+
+.description2 {
+    flex-basis: 35%;
+    margin-left: 5%;
+    order: 1;
+}
+
+.description,
+.description2,
+.description3 {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.img-two,
+.img3,
+.img-one{
+    flex-basis: 55%;
+}
+
+.img-two {
+    order: 0;
+}
+
+/* --------------- 4.4 Services ------------------- */
+
+.Services {
+    display: flex;
+    flex-basis: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    margin: 10vh 15vw;
+    flex-basis: calc(100% - 20vh);
+    width: calc(100% - 30vw);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+
+}
+
+.wrapper article {
+    flex-basis: calc(33% - 50px);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--Paars);
+}
+
+.wrapper article h4 {
+    font-size: 24px;
+    color: var(--Paars);
+    margin-bottom: 25px;
+}
+
+.wrapper article h4, .icon, p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.wrapper article p {
+    color: #0C0C0C;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+
+/* --------------- 4.5 Form ------------------- */
+
+.Form {
+    flex-basis: 100vh;
+    background-color: var(--Paars);
+    width: 100vw;
+}
+
+
+
+/* --------------- 4.5 Footer ------------------- */
+
+.Footer {
+    flex-basis: 7.5vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
